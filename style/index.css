@@ -1,1 +1,171 @@
 /* CSS stillerinizi buraya girin */
+
+/*! Base css codes */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+/*! Header css codes start */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 20px;
+    background: rgb(1,36,0);
+    background: linear-gradient(87deg, rgba(1,36,0,1) 0%, rgba(8,152,4,1) 10%, rgba(29,25,52,1) 20%, rgba(40,20,74,1) 30%, rgba(51,15,96,1) 40%, rgba(64,9,121,1) 50%, rgba(135,65,76,1) 60%, rgba(191,110,40,1) 70%, rgba(207,168,30,1) 80%, rgba(233,209,29,1) 90%, rgba(255,0,0,1) 100%);
+    border-bottom: 2px solid burlywood;
+}
+
+.header h1 {
+    width: auto;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0 20px;
+    color: #fff;
+}
+
+.header .navbar {
+    display: flex;
+    padding: 10px 0px;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    font-weight: bold;
+}
+
+/*! Header css codes end */
+
+/*! profile section css codes start */
+
+.profile {
+    
+}
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: peachpuff;
+    padding: 5%;
+    
+}
+.logo-text img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+
+.logo-text .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    margin: 0 150px;
+    line-height: 40px;
+    
+}
+
+.text .decoration {
+    width: 400px;
+    font-size: 20px;
+}
+
+.logo-text .text a {
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.text h1,p,a{
+    margin: 10px 0;
+    
+}
+
+.text a:hover {
+    background-color: black;
+    font-weight: bold;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3% 8%;
+}
+
+.box-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container img {
+    width: 400px;
+    height: 400px;
+
+}
+
+.profile {
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+}
+/*! profile section css codes end */
+
+/*! footer section css codes start */
+
+
+footer .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    
+}
+
+footer a {
+    margin-top: 15px;
+    background-color: gray;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+footer a:hover {
+    background-color: black;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 25px;
+}
+
+/*! footer section css codes end */
