@@ -20,15 +20,13 @@
     padding: 20px;
     background: rgb(1,36,0);
     background: linear-gradient(87deg, rgba(1,36,0,1) 0%, rgba(8,152,4,1) 10%, rgba(29,25,52,1) 20%, rgba(40,20,74,1) 30%, rgba(51,15,96,1) 40%, rgba(64,9,121,1) 50%, rgba(135,65,76,1) 60%, rgba(191,110,40,1) 70%, rgba(207,168,30,1) 80%, rgba(233,209,29,1) 90%, rgba(255,0,0,1) 100%);
-    border-bottom: 2px solid burlywood;
+    border-bottom: 2px solid black;
 }
 
 .header h1 {
-    width: auto;
     font-size: 36px;
     font-weight: bold;
     padding: 10px 0;
-    margin: 0 20px;
     color: #fff;
 }
 
@@ -64,7 +62,7 @@
     justify-content: center;
     align-items: center;
     background-color: peachpuff;
-    padding: 5%;
+    
     
 }
 .logo-text img {
@@ -73,6 +71,7 @@
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
+    padding: 1%;
 }
 
 
@@ -126,12 +125,15 @@
 .box-container img {
     width: 350px;
     height: 350px;
+    object-fit: cover;
 
 }
 
 .profile {
     border-bottom: 1px solid black;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
 }
 /*! profile section css codes end */
 
@@ -169,3 +171,86 @@ footer p {
 }
 
 /*! footer section css codes end */
+
+/*! Responsive codes start */
+
+@media screen and (max-width:500px) {
+    .header h1 {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 10px 0;
+        color: #fff;
+        margin: auto
+    }
+
+    .text h1, p, a {
+        margin: auto;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .profile .logo-text {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        
+    }
+    
+    .logo-text img {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        
+    }
+    .box-container {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:800px) {
+    
+    .header h1 {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 10px 0;
+        color: #fff;
+        margin: auto
+    }
+    .text h1, p, a {
+        margin: auto;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .profile .logo-text {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        width: 100%;
+        
+    }
+    
+    .logo-text img {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        
+    }
+    .box-container {
+        display: block;
+        margin: auto;
+    }
+}
+    
+    
+
+
+/*! Responsive codes end */
